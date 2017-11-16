@@ -6,15 +6,23 @@
 
 ## Flujo de trabajo
 
-# UX
+# Diseño de experiencia
 
 1. Realizar preguntas al cliente para definir sus necesidades y acotar el trabajo. 
-2. Probar herramientas de diseño de gráficos.
-3. Realizar sketch.
-4. Hacer una prueba de experiencia y de diseño con el cliente.
-5. Redefinir cambios de ser necesario.
+2. Realizar sketch.
+3. Hacer una prueba de experiencia y de diseño con el cliente.
+4. Redefinir cambios de ser necesario.
+5. Hacer el prototipo con moqups.
+6. Probar herramientas de diseño de gráficos.
 
-#
+
+# Desarrollo
+
+1. Crear archivo HTML.
+2. Darle estilos con CSS.
+3. Funcionalidad con JS.
+
+
 
 3. Cuando hayas terminado tu producto, envía un Pull Request a este repositorio
    (puedes solicitar apoyo de tus profes para este paso).
