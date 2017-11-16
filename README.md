@@ -4,8 +4,6 @@
 * **Curso:** _Creando tu primer sitio web interactivo_
 * **Unidad:** _Producto final_
 
-***
-
 ## Flujo de trabajo
 
 # UX
