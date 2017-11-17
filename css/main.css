@@ -1,2 +1,7 @@
 /*font-family: 'Inconsolata', monospace;
 font-family: 'Poppins', sans-serif;*/
+
+
+body .daily-news { /*para darle formato a la ventana de noticias del día*/
+	background-image: url("assets/images/daily-news.jpg"); /*imagen de fondo del div daily news*/
+}
