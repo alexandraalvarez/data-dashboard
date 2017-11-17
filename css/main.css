@@ -1,20 +1,46 @@
-/*font-family: 'Inconsolata', monospace;
-font-family: 'Poppins', sans-serif; colores: #FFC107(amarillo), #ECEBEB (gris); */
+/*font-family: 'Inconsolata', monospace; colores: #FFC107(amarillo), #ECEBEB (gris); */
 
-body {
-	font-family: 'Inconsolata', monospace;
-	font-family: 'Poppins',sans-serif;
+/*formato del body y sus elementos*/
+body {/*formato general del body*/
+	font-family: 'Inconsolata', monospace; /*tipo de fuente*/
+	font-family: 'Roboto', sans-serif; /*tipo de fuente alternativa*/
+	margin: 0; /*para que ninguno de sus elementos tenga margen*/
+	padding: 0; /*para que ninguno de sus elementos tenga padding*/
 }
 
-header {
-
+/*formato del header y sus elementos*/
+header { /*formato general del header*/
+	
 }
 
-header .laboratoria-logo {
-	width: 15%;
-	padding-left: 40%;
+header .laboratoria-logo { /*formato del logo de laboratoria*/
+	width: 15%; /*ancho del logo*/
+	padding-left: 40%;/*padding izquierdo para centrarlo*/
 }
 
-body .daily-news { /*para darle formato a la ventana de noticias del día*/
-	background-image: url("assets/images/daily-news.jpg"); /*imagen de fondo del div daily news*/
+/*formato del menu lateral*/
+body .menu-lateral { /*formato general del menú lateral*/
+	display: inline-block;
+	width: 20%; /*ancho*/
+	background-color: #FFC107; /*color de fondo*/
 }
+
+.menu-lateral .menu { /*formato general de los elementos i y a*/
+	display: block; /*para que aparezcan como bloque*/
+}
+
+/*formato del nav*/
+nav {
+	background-color: #ECEBEB; /*color del fondo del nav*/
+	width: 79.65%; /*ancho*/
+	display: inline-block; /**/
+	margin: 0; /*sin margen*/
+	float: right; /*que flote hacia la derecha para que quede pegado arriba*/
+}
+
+nav i,a {
+	display: inline-block; /*que se comporte como bloque en línea*/
+	line-height: 2.5rem; /*interlineado para darle más alto al nav*/
+	padding-left: 1.5rem; /*para distanciar un elemento de otro*/
+}
+
