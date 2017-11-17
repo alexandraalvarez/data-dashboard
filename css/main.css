@@ -1,6 +1,19 @@
 /*font-family: 'Inconsolata', monospace;
-font-family: 'Poppins', sans-serif;*/
+font-family: 'Poppins', sans-serif; colores: #FFC107(amarillo), #ECEBEB (gris); */
 
+body {
+	font-family: 'Inconsolata', monospace;
+	font-family: 'Poppins',sans-serif;
+}
+
+header {
+
+}
+
+header .laboratoria-logo {
+	width: 15%;
+	padding-left: 40%;
+}
 
 body .daily-news { /*para darle formato a la ventana de noticias del día*/
 	background-image: url("assets/images/daily-news.jpg"); /*imagen de fondo del div daily news*/

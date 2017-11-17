@@ -6,7 +6,7 @@ var bodyDocument = document.getElementsByTagName("body");
 bodyDocument.onload = function(){ /*para que aparezca las noticias al cargar la página*/
 	var dailyNews = document.createElement("div"); /*creación de div para las noticias diarias*/
 	dailyNews.setAttribute("class","daily-news"); /*dándole clase para poder darle estilos en CSS*/
-	body.appendChild(dailyNews); /*asignándole como padre el body (parece que con ésto aparece al final)*/
+	bodyDocument.appendChild(dailyNews); /*asignándole como padre el body (parece que con ésto aparece al final)*/
 
 	var seeNews = document.createElement("button"); /*creando el botón que le permitirá ir a ver las novedades a otra página*/
 	seeNews.setAttribute("class","see-news"); /*para darle clase al botón y poder modificar su estilo en CSS*/
@@ -20,7 +20,6 @@ bodyDocument.onload = function(){ /*para que aparezca las noticias al cargar la 
 			dailyNews.setAttribute("display","none");
 		}
    }
-
 }
 
 // Puedes hacer uso de la base de datos a través de la variable `data`
