@@ -71,8 +71,8 @@ body .menu-lateral { /*formato general del menú lateral*/
 .menu-lateral .list-settings { /*formato general de la lista list */
 	background-color: #FFC107;
 	position: absolute;
-	top: 11rem;	
-	left: 15rem;
+	top: 10.6rem;	
+	left: 15.8rem;
 }
 
 .menu-lateral .list-dashboard { /*formato general de la lista de dashboard*/
@@ -80,11 +80,17 @@ body .menu-lateral { /*formato general del menú lateral*/
 	margin-top: 0; /*sin margen superior*/
 	position: absolute;
 	background-color: #FFC107;
-	left: 15.7rem;
-	top: 18.5rem;
+	left: 15.8rem;
+	top: 18.2rem;
 }
 
+.menu-lateral .list:hover {
+	background-color: #F3F781;
+}
 
+.menu-lateral .integrant:hover {
+	background-color: #F3F781;
+}
 
 /*formato del nav*/
 

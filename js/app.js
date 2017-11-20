@@ -81,3 +81,5 @@ function dashboardMenu (){ /*declaro la función dashboardMenu*/
 	}
 	}	
 }		
+
+/*se me escapan las opciones de las listas laterales, no puedo poner el mouse encima de ellas, averiguar cómo arreglarlo*/
