@@ -1,26 +1,33 @@
-/*<i class="fa fa-times" aria-hidden="true"></i> para el fantasma
+// Puedes hacer uso de la base de datos a través de la variable `data`
+//console.log(data);
+var cities = document.getElementsByClassName("cities"); /*variable para llamar a las sedes*/
 
-En los menus cascada, falta agregar opciones de ver el overview, alumnos y profesores, cosa de que cuando quiera verlos, 
-pinche eso y listo */
-var bodyDocument = document.getElementsByTagName("body");
-bodyDocument.onload = function(){ /*para que aparezca las noticias al cargar la página*/
-	var dailyNews = document.createElement("div"); /*creación de div para las noticias diarias*/
-	dailyNews.setAttribute("class","daily-news"); /*dándole clase para poder darle estilos en CSS*/
-	bodyDocument.appendChild(dailyNews); /*asignándole como padre el body (parece que con ésto aparece al final)*/
-
-	var seeNews = document.createElement("button"); /*creando el botón que le permitirá ir a ver las novedades a otra página*/
-	seeNews.setAttribute("class","see-news"); /*para darle clase al botón y poder modificar su estilo en CSS*/
-	dailyNews.appendChild(seeNews); /*dándole como padre el div de noticias diarias, para que aparezca ahí*/
-
-	var textSeeNews = document.createTextNode("Ver noticias"); /*texto para que el botón diga ver noticias*/
-	seeNews.appendChild(textSeeNews); /*dándole como padre el botón al nodo de texto (ahora el botón dice algo)*/
-
-	function  clickOn (){
-		if (seeNews.onclick()) {
-			dailyNews.setAttribute("display","none");
-		}
-   }
+for (var i = 0; i < cities.length; i++) { /*iterando sobre las sedes*/
+	cities[i].addEventListener("mouseenter",showSubMenu); /*agrego el evento mouseenter y la función showSubMenu*/
 }
 
-// Puedes hacer uso de la base de datos a través de la variable `data`
-console.log(data);
+function showSubMenu (){ /*declaro la función showSubMenu*/
+	var listMenu = this.getElementsByClassName('generation')[0]; /*declaro la variable listSubMenu y uso "this" para el elemento sobre el cual posicione el mouse, y llamo a las generaciones*/
+	console.log(listMenu);
+
+	if (listMenu.classList.contains("hide")) {
+		listMenu.classList.remove("hide");
+		listMenu.classList.add("show");
+		console.log(listMenu);
+	} 
+
+	for (var i = 0; i < cities.length; i++) { /*iterando sobre las sedes*/
+	cities[i].addEventListener("mouseleave",hideSubMenu); /*agrego el evento mouseenter y la función showSubMenu*/
+	}
+
+	function hideSubMenu (){
+		var listMenu = this.getElementsByClassName('generation')[0]; /*declaro la variable listSubMenu y uso "this" para el elemento sobre el cual posicione el mouse, y llamo a las generaciones*/
+		console.log(listMenu);
+
+	if (listMenu.classList.contains("show")) {
+		listMenu.classList.remove("show");
+		listMenu.classList.add("hide");
+		console.log(listMenu);
+	}
+	}	
+}	

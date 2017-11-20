@@ -30,17 +30,81 @@ body .menu-lateral { /*formato general del menú lateral*/
 }
 
 /*formato del nav*/
-nav {
+
+nav { /*header del video*/
 	background-color: #ECEBEB; /*color del fondo del nav*/
 	width: 79.65%; /*ancho*/
-	display: inline-block; /**/
-	margin: 0; /*sin margen*/
+	margin: auto; /*margen automático*/
+	padding: 0;
 	float: right; /*que flote hacia la derecha para que quede pegado arriba*/
 }
 
-nav i,a {
-	display: inline-block; /*que se comporte como bloque en línea*/
-	line-height: 2.5rem; /*interlineado para darle más alto al nav*/
-	padding-left: 1.5rem; /*para distanciar un elemento de otro*/
+nav ul,li { /*para darle formato a los ul y li del nav*/
+	list-style: none; /*para quitar los puntitos de las listas*/
 }
 
+nav ul { /*para darle formato a los ul padres de las listas*/
+	padding-left: 0; /*para que los elementos de las listas queden con relleno cero*/
+	background-color: #ECEBEB; /*color de fondo*/
+	margin-top: 0; /*margen desde arriba*/
+}
+
+
+.nav-ul-cities .cities a { /*para darle formato a los elementos a de la lista de sedes*/ /*ella no usa ésta clase*/
+	text-decoration: none; /*sin decoración*/
+	padding: 0.8rem 1rem; /*relleno*/
+	margin-left: 4rem; /*margen desde la izquierda*/
+	margin-right: 4rem; /*margen desde la derecha*/
+	display: block; /*que se comporten como bloque*/
+}
+
+.nav-ul-cities .hide li a { /*para darle formato a los elementos a de la lista de generaciones*/ /*menu = nav*/
+	text-decoration: none; /*sin decoración*/
+	padding: 0.8rem 1rem; /*relleno*/
+	display: block; /*que se comporten como bloque*/
+}
+
+nav li { /*para darle formato a todos los elementos de las listas*/
+	display: inline-block; /*que se comporten como bloque en línea*/
+}
+
+nav .nav-ul-cities { /*para darle formato a la lista de las sedes*/
+	position: absolute; /*posición absoluta*/
+}
+
+nav ul ul { /*para darle formato de los ul de las sublistas*/
+	top: 2.79rem; /*separación entre la sede y las generaciones*/
+	position: absolute; /*posición absoluta*/
+}
+
+nav .generation li { /*para darle formato a los elementos de las listas de las generación */
+	display: block; /*que se comporten como bloque*/
+}
+
+nav .aqp { /*para darle posición a la generación de arequipa*/
+	left: 0.35rem; /*desde la izquierda*/
+}
+
+nav .lim { /*para darle posición a la generación de lima*/
+	left: 14.5rem; /*desde la izquierda*/
+}
+
+nav .mex { /*para darle posición a la generación de mexico*/
+	left: 29rem; /*desde la izquierda*/
+}
+
+nav .scl { /*para darle posición a la generación de santiago*/
+	left: 45.5rem; /*desde la izquierda*/
+}
+
+nav li:hover {/*para que tenga un efecto cuando pose el mouse encima*/
+	background-color: #BDBDBD;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
