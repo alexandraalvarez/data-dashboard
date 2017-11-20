@@ -53,17 +53,38 @@ body .menu-lateral { /*formato general del menú lateral*/
 	font-size: 1.5rem; /*tamaño de fuente*/
 }
 
+.menu-lateral .fa-envelope {/*formato detallado del correo*/
+	padding-top: 0; /*sin relleno superior*/
+	padding-bottom: 1rem; /*sin relleno inferior*/
+}
+
 .menu-lateral .fa-envelope span { /*formato detallado del elemento span del correo*/
 	text-align: center;	/*centrado*/
 }
 
-.menu-lateral .list-settings {
-	padding-left: 0;
+/*formato de las listas para menús desplegables*/
+
+.menu-lateral .list-settings { /*formato general de la lista de settings*/
+	padding-left: 0; /*relleno izquierda*/
 }
 
-.menu-lateral .list-dashboard {
-	padding-left: 0;
+.menu-lateral .list-settings { /*formato general de la lista list */
+	background-color: #FFC107;
+	position: absolute;
+	top: 11rem;	
+	left: 15rem;
 }
+
+.menu-lateral .list-dashboard { /*formato general de la lista de dashboard*/
+	padding-left: 0; /*relleno izquierda*/
+	margin-top: 0; /*sin margen superior*/
+	position: absolute;
+	background-color: #FFC107;
+	left: 15.7rem;
+	top: 18.5rem;
+}
+
+
 
 /*formato del nav*/
 
@@ -95,7 +116,7 @@ nav ul { /*para darle formato a los ul padres de las listas*/
 	display: block; /*que se comporten como bloque*/
 }
 
-.nav-ul-cities .hide li a { /*para darle formato a los elementos a de la lista de generaciones*/ /*menu = nav*/
+.nav-ul-cities .generation li a { /*para darle formato a los elementos a de la lista de generaciones*/ 
 	text-decoration: none; /*sin decoración*/
 	padding: 0.8rem 1rem; /*relleno*/
 	display: block; /*que se comporten como bloque*/
