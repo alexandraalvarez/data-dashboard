@@ -20,13 +20,49 @@ header .laboratoria-logo { /*formato del logo de laboratoria*/
 
 /*formato del menu lateral*/
 body .menu-lateral { /*formato general del menú lateral*/
-	display: inline-block;
+	display: inline-block; /*para que se comporte como bloque en línea*/
 	width: 20%; /*ancho*/
 	background-color: #FFC107; /*color de fondo*/
 }
 
+.menu-lateral .fa { /*formato general de los íconos*/
+	font-size: 1.25rem; /*tamaño de fuente*/
+	color: #000000;
+}
+
+.menu-lateral span { /*formato general de los span*/
+	padding-left: 1rem; /*relleno desde la izquierda*/
+	padding-right: 0.5rem;
+	line-height: 1rem; /*interlineado*/
+	font-size: 1rem; /*tamaño de fuente*/
+	color: #000000; /*color negro*/
+}
+
 .menu-lateral .menu { /*formato general de los elementos i y a*/
 	display: block; /*para que aparezcan como bloque*/
+	padding: 1rem; /*relleno*/
+}
+
+.menu-lateral .fa-user-circle-o { /*formato para el símbolo del usuario*/
+	text-align: center; /*para que el texto aparezca centrado*/
+	font-size: 2rem; /*tamaño de fuente*/
+	padding: 1.5rem; /*para darle relleno*/
+}
+
+.menu-lateral .fa-user-circle-o span { /*formato del nombre de usuario*/
+	font-size: 1.5rem; /*tamaño de fuente*/
+}
+
+.menu-lateral .fa-envelope span { /*formato detallado del elemento span del correo*/
+	text-align: center;	/*centrado*/
+}
+
+.menu-lateral .list-settings {
+	padding-left: 0;
+}
+
+.menu-lateral .list-dashboard {
+	padding-left: 0;
 }
 
 /*formato del nav*/
@@ -50,9 +86,10 @@ nav ul { /*para darle formato a los ul padres de las listas*/
 }
 
 
-.nav-ul-cities .cities a { /*para darle formato a los elementos a de la lista de sedes*/ /*ella no usa ésta clase*/
+.nav-ul-cities .cities a { /*para darle formato a los elementos a de la lista de sedes*/ 
 	text-decoration: none; /*sin decoración*/
 	padding: 0.8rem 1rem; /*relleno*/
+	color: #000000;
 	margin-left: 4rem; /*margen desde la izquierda*/
 	margin-right: 4rem; /*margen desde la derecha*/
 	display: block; /*que se comporten como bloque*/
@@ -101,10 +138,10 @@ nav li:hover {/*para que tenga un efecto cuando pose el mouse encima*/
 	background-color: #BDBDBD;
 }
 
-.hide {
-	display: none;
+.hide { /*todos los elementos con clase hide*/
+	display: none; /*para que no se vean*/
 }
 
-.show {
-	display: block;
+.show { /*todos los elementos con clase show*/
+	display: block; /*para que se muestren como bloque*/
 }
