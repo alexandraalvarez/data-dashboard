@@ -1,3 +1,4 @@
+
 /*font-family: 'Inconsolata', monospace; colores: #FFC107(amarillo), #ECEBEB (gris); */
 
 /*formato del body y sus elementos*/
@@ -20,8 +21,10 @@ header .laboratoria-logo { /*formato del logo de laboratoria*/
 
 /*formato del menu lateral*/
 body .menu-lateral { /*formato general del menú lateral*/
+	position: absolute;
 	display: inline-block; /*para que se comporte como bloque en línea*/
 	width: 20%; /*ancho*/
+	height: auto;
 	background-color: #FFC107; /*color de fondo*/
 }
 
@@ -43,6 +46,7 @@ body .menu-lateral { /*formato general del menú lateral*/
 }
 
 .menu-lateral .menu { /*formato general de los elementos i y a*/
+	z-index: 100;
 	display: block; /*para que aparezcan como bloque*/
 	padding: 1rem; /*relleno*/
 }
@@ -103,6 +107,7 @@ body .menu-lateral { /*formato general del menú lateral*/
 /*formato del nav*/
 
 nav { /*header del video*/
+	z-index: 100;/* para superponer el despliegue del menú sobre los gráficos*/
 	background-color: #ECEBEB; /*color del fondo del nav*/
 	width: 79.65%; /*ancho*/
 	margin: auto; /*margen automático*/
@@ -115,6 +120,7 @@ nav ul,li { /*para darle formato a los ul y li del nav*/
 }
 
 nav ul { /*para darle formato a los ul padres de las listas*/
+	z-index: 100;
 	padding-left: 0; /*para que los elementos de las listas queden con relleno cero*/
 	background-color: #ECEBEB; /*color de fondo*/
 	margin-top: 0; /*margen desde arriba*/
@@ -180,3 +186,43 @@ nav li:hover {/*para que tenga un efecto cuando pose el mouse encima*/
 .show { /*todos los elementos con clase show*/
 	display: block; /*para que se muestren como bloque*/
 }
+#chart_div{
+	z-index: 0;
+	display: inline-block;
+	padding-left: 16rem;
+	position: relative;
+	bottom:-1rem;	
+}
+#piechart_1{
+	z-index: 0;
+	display: inline-block;
+	left: 42rem;
+	position: relative;
+	bottom:23rem;	
+}
+#chart_target{
+	z-index: 0;
+	display: inline-block;
+	left: 17rem;
+	position: relative;
+	bottom:18rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

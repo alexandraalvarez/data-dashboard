@@ -15,7 +15,8 @@ var data = google.visualization.arrayToDataTable([
         ]);
 
         var options = {
-          title: 'Porcentage'
+          title: 'Porcentage',
+          colors:['#ffbf43', '#dcdcdc' ]
 
         };
         var chart = new google.visualization.PieChart(document.getElementById('piechart_1'));
@@ -62,7 +63,6 @@ function drawBasic() {
       function drawEnrollment() {
         var data = google.visualization.arrayToDataTable([
           ['Task', 'Hours per Day'],
-          ['Enrollment',  0],
           ['Dropout',  15],
           ['Enrollment', 145],
           
@@ -83,14 +83,14 @@ google.charts.load('current', {'packages':['corechart']});
 function drawChart1() {
 var data = google.visualization.arrayToDataTable([
           ['Porcentage', 'Enrollment'],
-          ['Promoters', 0],
           ['Detractors', 17],
           ['Passive',  9],
           ['Promoters', 60]  
         ]);
 
         var options = {
-          title: 'Net Promoter Score'
+          title: 'Net Promoter Score',
+          colors:['#ffbf43','#DA8B2D','grey']
 
         };
         var chart = new google.visualization.PieChart(document.getElementById('piechart_2'));
@@ -118,6 +118,7 @@ var data = google.visualization.arrayToDataTable([
       vAxis: {title: 'Nº Students'},
       hAxis: {title: 'Sprints'},
       seriesType: 'bars',
+      colors:['#ffbf43', '#D5DA2D', 'grey']
     };
 
     var chart = new google.visualization.ComboChart(document.getElementById('chart_target'));
