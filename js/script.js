@@ -1,13 +1,14 @@
-// para que cargue bien la configuración de google charts
+// para que cargue configuración de google charts
 google.charts.load('current', {'packages':['corechart']});
+//llamo a los gráficos y coloco en orden de visualización
 google.charts.setOnLoadCallback(drawBasic);
 google.charts.setOnLoadCallback(drawPie);
 google.charts.setOnLoadCallback(drawVisualization);
 google.charts.setOnLoadCallback(drawChart1);
 
-//#dcdcdc #b9b9b9(colores a usar cuando sepa como)
 function drawPie() {
 var data = google.visualization.arrayToDataTable([
+ //genero columnas del gráfico
           ['Porcentage', 'Students'],
           ['Students that meet the target', 0],
           ['Students out the target', 65.7],
@@ -16,6 +17,7 @@ var data = google.visualization.arrayToDataTable([
 
         var options = {
           title: 'Porcentage',
+//modifico colores predeterminados doy tonos institucionales        
           colors:['#ffbf43', '#dcdcdc' ]
 
         };
@@ -70,6 +72,8 @@ function drawBasic() {
 
         var options = {
           title: 'Enrollment/Dropout',
+//modifico colores predeterminados doy tonos institucionales
+          colors:['#dcdcdc','#ffbf43'],
           pieHole: 0.4,
         };
 
@@ -79,7 +83,6 @@ function drawBasic() {
 
 google.charts.load('current', {'packages':['corechart']});
 
-//#dcdcdc #b9b9b9
 function drawChart1() {
 var data = google.visualization.arrayToDataTable([
           ['Porcentage', 'Enrollment'],
