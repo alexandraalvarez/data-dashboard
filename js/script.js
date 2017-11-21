@@ -1,36 +1,42 @@
+// para que cargue bien la configuración de google charts
 google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
-//#dcdcdc #b9b9b9
-function drawChart() {
+google.charts.setOnLoadCallback(drawBasic);
+google.charts.setOnLoadCallback(drawPie);
+google.charts.setOnLoadCallback(drawVisualization);
+google.charts.setOnLoadCallback(drawChart1);
+
+//#dcdcdc #b9b9b9(colores a usar cuando sepa como)
+function drawPie() {
 var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Promoters',     60],
-          ['Passive',      17],
-          ['Detractors',  9],
+          ['Porcentage', 'Students'],
+          ['Students that meet the target', 0],
+          ['Students out the target', 65.7],
+          ['Students that meet the target', 79.3]
         ]);
 
         var options = {
-          title: 'Net Promoter Score'
+          title: 'Porcentage'
+
         };
-        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_1'));
 
         chart.draw(data, options);
       };   
 
 google.charts.load('current', {packages: ['corechart', 'bar']});
-google.charts.setOnLoadCallback(drawBasic);
 
 function drawBasic() {
 
       var data = google.visualization.arrayToDataTable([
-        ['Sprints', '# students meet the Target', {role:'style'}],
+        ['Sprints', 'Students meet the Target: Average 79.3', {role:'style'}],
         ['S1', 60,'#ffbf43'],
         ['S2', 75, '#ffbf43'],
         ['S3', 100, '#ffbf43'],
         ['S4', 85,'#ffbf43'],
         ['S5', 97, '#ffbf43'],
         ['S6', 70, '#ffbf43'],
-        ['S7', 68, '#ffbf43']
+        ['S7', 68, '#ffbf43'],
+        ['Nº global', 79.3, 'grey']
       ]);
 
       var options = {
@@ -49,56 +55,71 @@ function drawBasic() {
 
       graphic.draw(data, options);
     };
-
-   /*google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawVisual);
-
-      function drawVisual() {
+      
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawEnrollment);
+      
+      function drawEnrollment() {
         var data = google.visualization.arrayToDataTable([
-         ['TECH', 'HSE'],
-         ['S1',65, 78],
-         ['S2',72, 80],
-         ['S3', 80, 82],
-         ['S4',  77, 90],
-         ['S5',  75, 84],
-         ['S6',  75, 84]
-      ]);
-    var options = {
-      title : 'Student that meet the Target TECH / HSE',
-      vAxis: {title: 'Nº STUDENTS'},
-      hAxis: {title: 'SPRINTS'},
-      //seriesType: 'bars',
-      //series: {2: {type: 'line'}}
-    };
-
-    var chart = new google.visualization.BarChart(document.getElementById('chart_div3'));
-    chart.draw(data, options);
-  }*/
- 
-        
-/*google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart2);
-
-function drawChart2() {
-var data = google.visualization.arrayToDataTable([
-         data.addColumn('string','sprints');
-         data.addColumn('number','#Students That Meet The Target');
-         
-         data.addRows([
-          ['S1',70],
-          ['S2',83],
-          ['S3', 0],
-          ['S4', 0],
-          ['S5',0],
-          ['S6',0],
-          ['S7',0],
+          ['Task', 'Hours per Day'],
+          ['Enrollment',  0],
+          ['Dropout',  15],
+          ['Enrollment', 145],
+          
         ]);
 
         var options = {
-          title: 'Achievement Global TECH'
+          title: 'Enrollment/Dropout',
+          pieHole: 0.4,
         };
 
-        var chart = new google.visualization.barChart(document.getElementById('barchart_div'));
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+
+google.charts.load('current', {'packages':['corechart']});
+
+//#dcdcdc #b9b9b9
+function drawChart1() {
+var data = google.visualization.arrayToDataTable([
+          ['Porcentage', 'Enrollment'],
+          ['Promoters', 0],
+          ['Detractors', 17],
+          ['Passive',  9],
+          ['Promoters', 60]  
+        ]);
+
+        var options = {
+          title: 'Net Promoter Score'
+
+        };
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_2'));
 
         chart.draw(data, options);
-      };*/      
+      };   
+
+     google.charts.load('current', {'packages':['corechart']});
+
+      function drawVisualization() {
+        // Some raw data (not necessarily accurate)
+        var data = google.visualization.arrayToDataTable([
+         ['Sprint', 'TECH', 'HSE','Average'],
+         ['S1',  70,      93,      116.5],
+         ['S2',  85,      110,      140],
+         ['S3',  65,      93,      79],
+         ['S4',  86,      90,      88],
+         ['S5',  92,      98,      92],
+         ['S6',  100,      93,      96],
+         ['S7',  109,      87,     98]
+      ]);
+
+    var options = {
+      title : 'Student that meet Target',
+      vAxis: {title: 'Nº Students'},
+      hAxis: {title: 'Sprints'},
+      seriesType: 'bars',
+    };
+
+    var chart = new google.visualization.ComboChart(document.getElementById('chart_target'));
+    chart.draw(data, options);
+  }
