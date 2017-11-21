@@ -13,24 +13,26 @@
     </header>
     <section class="menu-lateral">
       <i class="fa fa-user-circle-o menu" aria-hidden="true"><span>Valentina</span></i>
-      <i class="fa fa-envelope menu" aria-hidden="true"><span>valentina@laboratoria.la</span></i>
-      <a href="#" class="menu list"><i class="fa fa-cog" aria-hidden="true"><span>Settings</span></i><i class="fa fa-sort-desc" aria-hidden="true"></i></a>
-      <ul class="hide list-settings">
-        <li><a href="#" class="menu"><i class="fa fa-language" aria-hidden="true"><span>English</span></i></a></li>
-        <li><a href="#" class="menu"><i class="fa fa-language" aria-hidden="true"><span>Spanish</span></i></a></li>
-        <li><a href="#" class="menu"><i class="fa fa-wrench" aria-hidden="true"><span>Portuguese</span></i></a></li>
-        <li><a href="#" class="menu"><i class="fa fa-lock" aria-hidden="true"><span>Security</span></i></a></li>
-      </ul>
-      <a href="#" class="menu matters"><i class="fa fa-th-large" aria-hidden="true"><span>Dashboard matters</span></i></a>
-      <a href="#" class="menu integrant"><i class="fa fa-th-large" aria-hidden="true"><span>Dashboard TMs</span></i><i class="fa fa-sort-desc" aria-hidden="true"></i></a>
-      <ul class="hide list-dashboard">
-        <li><a href="#" class="menu"><i class="fa fa-square" aria-hidden="true"><span>Overview</span></i></a></li>
-        <li><a href="#" class="menu"><i class="fa fa-square-o" aria-hidden="true"><span>Students</span></i></a></li>
-        <li><a href="#" class="menu"><i class="fa fa-square-o" aria-hidden="true"><span>Teachers</span></i></a></li>
-        <li><a href="#" class="menu"><i class="fa fa-square-o" aria-hidden="true"><span>Jedis</span></i></a></li>
-      </ul>
-      <a href="#" class="menu"><i class="fa fa-plus-square" aria-hidden="true"><span>News</span></i></a>
-    </section> <!--por semántica un aside es uns sección con contenido que roza tangencialmente la página, lo que no calza con nuestro menú, que es parte importante de la página-->
+      <ul class="lateral-list">
+        <li class="elements"><i class="fa fa-envelope menu" aria-hidden="true"><span>valentina@laboratoria.la</span></i></li>
+        <select class="lists settings">
+          <option value="#" class="elements menu fa fa-cog" aria-hidden="true"><span>Settings</span></option>
+          <option value="#" class="menu fa fa-language" aria-hidden="true"><span>English</span></option>
+          <option value="#" class="menu fa fa-language" aria-hidden="true"><span>Spanish</span></option>
+          <option value="#" class="menu fa fa-wrench" aria-hidden="true"><span>Portuguese</span></option>
+          <option value="#" class="menu fa fa-lock" aria-hidden="true"><span>Security</span></option>
+        </select>
+        <li class="elements"><a href="#" class="menu matters"><i class="fa fa-th-large" aria-hidden="true"><span>Dashboard matters</span></i></a></li>
+        <select class="lists dashboard menu">
+          <option value="#" class="elements menu fa fa-th-large" aria-hidden="true"><span>Dashboard TMs</span></option>
+          <option value="students.html" class="menu fa fa-square" aria-hidden="true"><span>Overview</span></option>
+          <option value="#" class="menu fa fa-square-o" aria-hidden="true"><span>Students</span></option>
+          <option value="#" class="menu fa fa-square-o" aria-hidden="true"><span>Teachers</span></option>
+          <option value="#" class="menu fa fa-square-o" aria-hidden="true"><span>Jedis</span></option>
+        </select>
+        <li class="elements"><a href="#" class="menu"><i class="fa fa-plus-square" aria-hidden="true"><span>News</span></i></a></li>
+      </ul>  
+    </section> <!--por semántica un aside es una sección con contenido que roza tangencialmente la página, lo que no calza con nuestro menú, que es parte importante de la página-->
     <nav>
       <ul class="nav-ul-cities">
         <li class="cities aqp"><a href="#">Arequipa <span class="fa fa-sort-desc" aria-hidden="true"></span></a>

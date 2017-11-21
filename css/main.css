@@ -25,6 +25,10 @@ body .menu-lateral { /*formato general del menú lateral*/
 	background-color: #FFC107; /*color de fondo*/
 }
 
+.menu-lateral .lateral-list { /*formato general de la lista lateral*/
+	padding-left: 0; /*relleno a la izquierda*/
+}
+
 .menu-lateral .fa { /*formato general de los íconos*/
 	font-size: 1.25rem; /*tamaño de fuente*/
 	color: #000000;
@@ -64,31 +68,35 @@ body .menu-lateral { /*formato general del menú lateral*/
 
 /*formato de las listas para menús desplegables*/
 
-.menu-lateral .list-settings { /*formato general de la lista de settings*/
-	padding-left: 0; /*relleno izquierda*/
+.menu-lateral .settings { /*formato general de select settings*/
+	padding: 1rem 6.8rem 1rem 3rem; /*relleno*/
+	background-color: #FFC107; /*color de fondo*/
+	border: none;
+	font-family: 'Roboto', sans-serif; /*tipo de fuente alternativa*/
+	font-size: 0.9rem;
 }
 
-.menu-lateral .list-settings { /*formato general de la lista list */
-	background-color: #FFC107;
-	position: absolute;
-	top: 10.6rem;	
-	left: 15.8rem;
+.menu-lateral .settings option {
+	font-size: 1rem;
 }
 
-.menu-lateral .list-dashboard { /*formato general de la lista de dashboard*/
-	padding-left: 0; /*relleno izquierda*/
-	margin-top: 0; /*sin margen superior*/
-	position: absolute;
-	background-color: #FFC107;
-	left: 15.8rem;
-	top: 18.2rem;
+.menu-lateral .dashboard { /*formato general de la lista de dashboard*/
+	padding: 1rem 5.05rem 1rem 3rem; /*relleno*/
+	background-color: #FFC107; /*color de fondo*/
+	border: none;
+	font-family: 'Roboto', sans-serif; /*tipo de fuente alternativa*/
+	font-size: 0.9rem;
 }
 
-.menu-lateral .list:hover {
+.menu-lateral option:hover {
 	background-color: #F3F781;
 }
 
-.menu-lateral .integrant:hover {
+.menu-lateral .settings:hover {
+	background-color: #F3F781;
+}
+
+.menu-lateral .dashboard:hover {
 	background-color: #F3F781;
 }
 
